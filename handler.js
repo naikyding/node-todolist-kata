@@ -38,7 +38,7 @@ const postItem = async (req, res) => {
       id: uuid(),
       content
     })
-    successHandle({ res, data: DB })
+    successHandle({ res, statusCode: 201, data: DB })
   } catch {
     failHandle({ res, message: '資料錯誤' })
   }
