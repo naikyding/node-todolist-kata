@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "84d9258f-ed2d-42c7-b89f-c05991439c17",
+		"name": "todolist - heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "取得列表",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://todo-kata-t8.herokuapp.com/todo",
+					"protocol": "https",
+					"host": [
+						"todo-kata-t8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "新增項目",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"111111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todo-kata-t8.herokuapp.com/todo",
+					"protocol": "https",
+					"host": [
+						"todo-kata-t8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除項目",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todo-kata-t8.herokuapp.com/todo/:id",
+					"protocol": "https",
+					"host": [
+						"todo-kata-t8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除列表",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://todo-kata-t8.herokuapp.com/todo",
+					"protocol": "https",
+					"host": [
+						"todo-kata-t8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改項目",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"content\": \"9999999\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://todo-kata-t8.herokuapp.com/todo/:id",
+					"protocol": "https",
+					"host": [
+						"todo-kata-t8",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"todo",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1c79eb32-dd1a-42bd-b729-5b39a2775bcf"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
