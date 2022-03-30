@@ -68,6 +68,8 @@ const editItem = async (req, res) => {
 
     const data = await bufferHandle(req)
     const { content } = data
+    if (!content) throw false
+
     editItem.content = content
     successHandle({ res, data: DB })
   } catch {
